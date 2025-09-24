@@ -11,7 +11,7 @@ async function pesquisar() {
         
     console.log(cep, document.getElementById('cep'))
 
-    let res = await fetch("https://brasilapi.com.br/api/cep/v2/"+cep)
+    let res = await axios.get("https://brasilapi.com.br/api/cep/v2/"+cep)
 
     let x = Object.values(await res.json())
 
