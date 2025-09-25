@@ -1,4 +1,4 @@
-async function pesquisar() {
+//async function pesquisar() {
     let cep = document.getElementById('cep').value
     let result = document.getElementById('result')
 
@@ -23,5 +23,5 @@ async function pesquisar() {
     }
 
     
-}
-
+//}
+//
