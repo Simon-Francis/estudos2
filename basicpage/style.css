@@ -5,7 +5,8 @@
 }
 
 body {
-    height: 100vh;
+    display: block;
+   
 }
 
 header {
@@ -41,8 +42,28 @@ a {
 
 
 .div1 {
+    display: flex;
+    margin: 100px;
     background-color: rgb(250, 252, 250);
     height: 400px;
+    
+}
+
+span {
+    height: 100px;
+    width: 100px;
+}
+img {
+    
+    height: 60px;
+}
+
+h5 {
+    padding-top: 30px;  
+}
+
+.div1 > p {
+    padding-top: 30px;
 }
 
 .div2 {
