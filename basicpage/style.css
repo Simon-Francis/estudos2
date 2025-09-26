@@ -25,8 +25,8 @@ h1 {
 
 
 nav {
-
-    
+    display: flex;
+    align-items: center;
     text-align: left;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.411);
     padding: 5px;
@@ -41,6 +41,8 @@ a {
 }
 
 table {
+    max-width: 1200px;
+    margin: auto;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -51,18 +53,19 @@ th {
 }
 
 .p {
-    text-align: left;
+    text-align: justify;
     padding: 30px 0px;
+    
 }
 
 .p2 {
-    text-align: left;
+    text-align: justify;
     padding: 30px 0px;
 }
 
 .img1 {
     margin: 30px;
-    width: 120px;
+    max-width: 300px;
 }
 
 
@@ -72,7 +75,7 @@ th {
 
 .img2 {
     margin: 30px;
-    width: 120px;
+    max-width: 300px;
 }
 
 
@@ -81,8 +84,16 @@ th {
 }
 
 .div3 {
+    display: flex;
+    align-items: center;
+    justify-content:center;
     background-color: rgb(56, 53, 53);
     height: 200px;
+}
+.img3 {
+    
+    height: 20px;
+    padding: 5px;
 }
 
 footer {
