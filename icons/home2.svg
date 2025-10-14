@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="49.417" height="48" fill="white" fill-opacity="0.01" style="" x="-1.417"/>
+  <path d="M9 18V42H39V18L24 6L9 18Z" style="fill: rgb(229, 235, 244); paint-order: stroke;"/>
+  <path d="M 7.638 42 L 7.638 17.709 L 2.202 21.758 L 23.945 5.564 L 45.689 21.758 L 40.253 17.709 L 40.253 42 L 7.638 42 Z" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style=""/>
+  <path d="M19 29V42H29V29H19Z" stroke-linejoin="round" style="stroke: rgb(0, 0, 0); fill: rgb(179, 96, 7);"/>
+  <path d="M9 42H39" stroke="#000000" stroke-width="4" stroke-linecap="round"/>
+  <path style="fill: rgb(216, 216, 216); stroke-width: 0.5px; stroke: rgba(176, 171, 171, 0.93); stroke-linecap: round; stroke-miterlimit: 3.99;" d="M 28.234 35.031 L 26.539 35.038"/>
+  <ellipse style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0); stroke-dasharray: 2; stroke-linecap: round; stroke-width: 0px;" cx="28.227" cy="35.021" rx="0.208" ry="0.138"/>
+</svg>

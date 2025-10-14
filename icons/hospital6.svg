@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="48" height="48" fill="white" fill-opacity="0.01"/>
+  <path d="M32 11H40L44 21H4L8 11H16" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" style="fill: rgb(250, 111, 44); stroke-width: 3px;"/>
+  <path d="M8 21H40V43H8V21Z" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 3px; fill: rgba(255, 193, 47, 0.745);"/>
+  <rect x="16.218" y="5.49" width="16" height="16" stroke-linecap="round" stroke-linejoin="round" style="fill: rgb(255, 255, 255); stroke-width: 2px; stroke: rgb(32, 63, 253);"/>
+  <rect x="16" y="29" width="8" height="14" stroke="white" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 2px; fill: rgb(174, 108, 0);"/>
+  <rect x="24" y="29" width="8" height="14" stroke="white" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 2px; fill: rgb(174, 108, 0);"/>
+  <path d="M 19.965 13.218 L 28.471 13.218" stroke-linecap="round" stroke-linejoin="round" style="stroke: rgb(243, 18, 18); stroke-width: 2px;"/>
+  <path d="M36 43H12" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" style="stroke-width: 3px;"/>
+  <path d="M 24.218 17.58 L 24.218 9.237" stroke-linecap="round" stroke-linejoin="round" style="fill: rgb(186, 218, 85); stroke: rgb(243, 18, 18); stroke-width: 2px;"/>
+</svg>

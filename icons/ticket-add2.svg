@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <style type="text/css">
+	.st0{fill:none;}
+</style>
+  <path d="M22,10V6c0-1.1-0.9-2-2-2H4C2.9,4,2,4.9,2,6v4c1.1,0,2,0.9,2,2s-0.9,2-2,2v4c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2v-4 c-1.1,0-2-0.9-2-2S20.9,10,22,10z M16,13h-3v3h-2v-3H8v-2h3V8h2v3h3V13z" style="fill: rgb(219, 144, 44);"/>
+  <rect class="st0" width="24" height="24"/>
+  <rect x="8" y="10.976" width="7.945" height="2.075" style="paint-order: fill; fill-rule: nonzero; fill: rgb(41, 38, 38); stroke: rgb(41, 38, 38);"/>
+  <rect x="10.949" y="7.945" width="2.157" height="8" style="fill: rgb(41, 38, 38); stroke: rgb(41, 38, 38);"/>
+</svg>

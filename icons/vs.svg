@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="48" height="48" fill="white" fill-opacity="0.01" style="transform-box: fill-box; transform-origin: 50% 50%;"/>
+  <path d="M 30.787 2.149 L 16.783 2.149 L 16.783 17.494 L 0.445 17.494 L 0.445 30.648 L 16.783 30.648 L 16.783 45.995 L 30.787 45.995 L 30.787 30.648 L 47.125 30.648 L 47.125 17.494 L 30.787 17.494 L 30.787 2.149 Z" stroke-width="4" stroke-linejoin="round" style="paint-order: fill; fill: rgb(1, 8, 119); stroke: rgb(41, 38, 38); transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0.694658, 0.71934, -0.71934, 0.694658, 0.000001, -0.000001)"/>
+</svg>

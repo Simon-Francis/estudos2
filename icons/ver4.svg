@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" class="iconify iconify--emojione" preserveAspectRatio="xMidYMid meet">
+  <path d="M62 32S51.9 52 32 52S2 32 2 32s10.1-20 30-20s30 20 30 20" fill="#231f20"/>
+  <path d="M57 32s-8.4 16.7-25 16.7S7 32 7 32s8.4-16.7 25-16.7S57 32 57 32z" fill="#ffffff"/>
+  <path d="M45.4 32c0 7.5-6 13.5-13.5 13.5s-13.5-6-13.5-13.5s6-13.5 13.5-13.5s13.5 6 13.5 13.5" style="fill: rgb(21, 125, 41);"/>
+  <path d="M 36.785 32.035 C 36.785 34.765 34.505 37.029 31.755 37.029 C 29.005 37.029 26.725 34.765 26.725 32.035 C 26.725 29.305 29.005 27.041 31.755 27.041 C 34.505 27.041 36.785 29.305 36.785 32.035" fill="#231f20" style=""/>
+</svg>
