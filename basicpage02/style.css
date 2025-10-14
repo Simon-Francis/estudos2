@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    height: 90vh;
+    box-sizing: border-box;
 }
 
 header {
@@ -10,11 +10,12 @@ header {
 
 h1 {
     margin: auto;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 main {
+    display: grid;
+    width: 100vw;
 }
 
 .sidebar {
@@ -23,6 +24,7 @@ main {
     color: rgb(181, 176, 199);
     transition: 0.4s;
     width: 60px;
+    height: 90vh;
 }
 
 .sidebar:hover {
@@ -30,8 +32,12 @@ main {
 }
 
 .maincont {
+    grid-template: 1fr;
     margin-left: 60px;
+    height: 100%;
 }
 
 footer {
+    grid-area: 5/1/-1/-1;
+    height: 25px;
 }
