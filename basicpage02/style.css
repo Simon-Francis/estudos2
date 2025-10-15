@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    border: 3px solid blue;
+    background-color: #1C3BAA;
 }
 
 h1 {
@@ -17,16 +17,17 @@ main {
     display: grid;
     grid-template-columns: 15% repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    background-color: #7F0FA7;
     height: calc(100vh - 90px);
 }
 
 .sidebar {
     position: absolute;
-    background-color: rgb(70, 26, 172);
+    background-color: #461aac;
     color: rgb(251, 250, 253);
     transition: 0.4s;
     width: 3%;
-    height: 90vh;
+    height: 88vh;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -40,21 +41,38 @@ main {
     width: 15%;
 }
 
-
-.ai-door {
-    margin-top: auto;
+.ico-home, .ico-cale, .ico-cada, .ico-conf {
+    padding-top: 20px;
 }
+
+.sair {
+    margin-top: auto;
+    padding-bottom: 10px;
+}
+
 
 i {
     cursor: pointer;
 }
 
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 p {
+    padding-left: 5px;
     display: none;
     font-size: 15px;
 }
 
+.pag-main {
+    display: block;
+}
+
 .sidebar:hover p {
+    gap: 8px;
     display: inline;
 }
 .maincont {
