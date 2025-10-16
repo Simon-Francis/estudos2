@@ -1,11 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calendário</title>
-</head>
-<body>
-    <h1>Página 02</h1>
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+
+    <title>Calculadora</title>
+
+    <style>
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        background-image: linear-gradient(#1c307a, #8829aa);
+      }
+      header {
+        background-color: #1c307a;
+      }
+      h1 {
+        margin: auto;
+        text-align: center;
+      }
+
+      main {
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 20% repeat(5, 16%);
+        grid-template-rows: repeat(6, 1fr);
+        background-image: linear-gradient(#7f0fa7, #9a77a7);
+        height: calc(100vh - 90px);
+        border-radius: 1%;
+      }
+
+      .sidebar {
+        position: absolute;
+        background-image: linear-gradient(#461aac);
+        color: rgb(251, 250, 253);
+        transition: 0.4s;
+        width: 3%;
+        height: 88vh;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        overflow: hidden;
+        font-size: 30px;
+        padding-left: 1%;
+        padding-top: 20px;
+      }
+
+      .sidebar:hover {
+        width: 15%;
+      }
+
+      .ico-home,
+      .ico-cale,
+      .ico-cada,
+      .ico-conf {
+        padding-top: 20px;
+      }
+
+      .sair {
+        margin-top: auto;
+        padding-bottom: 10px;
+      }
+
+      i {
+        cursor: pointer;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      p {
+        padding-left: 5px;
+        display: none;
+        font-size: 15px;
+      }
+
+      .sidebar:hover p {
+        gap: 8px;
+        display: inline;
+      }
+
+      .pag-main {
+        display: block;
+      }
+
+      .maincont {
+        place-items: start start;
+        grid-area: 1/2/-1/-1;
+        height: 100%;
+      }
+
+      .calculadora {
+        grid-area: 2/2/5/5;
+        border: 5px solid black;
+      }
+
+      footer {
+        grid-area: 5/1/-1/-1;
+        height: 25px;
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <header>
+      <h1>Calculadora</h1>
+    </header>
+
+    <main>
+      <div class="sidebar">
+        <a class="ico-home" href="index.html">
+          <i class="ai-home-alt1"><p>Home</p></i>
+        </a>
+        <a class="ico-cale" href="calendario.html">
+          <i class="ai-calendar"><p>Calendário</p></i>
+        </a>
+        <a class="ico-cada" href="cadastrar.html">
+          <i class="ai-clipboard"><p>Cadastrar</p></i>
+        </a>
+        <a class="ico-conf" href="configuracoes.html">
+          <i class="ai-gear"><p>Configurações</p></i>
+        </a>
+
+        <a class="sair" href="">
+          <i class="ai-door"><p>Sair</p></i>
+        </a>
+      </div>
+
+      <div class="calculadora">
+        <input type="button" value="Botão">
+      </div>
+    </main>
+
+    <footer>&copy;Francis Simon</footer>
+  </body>
 </html>
