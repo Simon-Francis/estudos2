@@ -109,6 +109,54 @@
         margin-top: 10px;
         text-align: center;
       }
+
+      /*Calculadora*/
+      .calculadora {
+        background-color: #333;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+        #visor {
+            width: 100%;
+            height: 40px;
+            font-size: 24px;
+            text-align: right;
+            margin-bottom: 10px;
+            padding: 5px;
+            background-color: #eee;
+            border: none;
+        }
+
+        .botoes {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 5px;
+        }
+
+        button {
+          padding: 10px;
+          font-size: 18px;
+          border: none;
+          background-color: #4caf50;
+          color: white;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+
+        button:hover {
+          background-color: #45a049;
+        }
+
+        .operador {
+          background-color: #f44336;
+        }
+
+        .operador:hover {
+          background-color: #da190b;
+        }
+
     </style>
   </head>
   
@@ -116,7 +164,7 @@
     <header>
       <h1>Calculadora</h1>
     </header>
-
+    <!--Barra lateral-->
     <main>
       <div class="sidebar">
         <a class="ico-home" href="index.html">
@@ -137,31 +185,41 @@
         </a>
       </div>
 
-      
-      <div class="calculadora">
-      
-        <input type="text" id="visor" readonly>
+      <!--Calculadora-->
 
+       <div class="calculadora">
+        <!-- Visor da calculadora -->
+        <input type="text" id="visor" readonly>
+        
+        <!-- Botões da calculadora -->
         <div class="botoes">
-            <button>C</button>
-            <button><</button>
-            <button>%</button>
-            <button>/</button>
-            <button>9</button>
-            <button>8</button>
-            <button>7</button>
-            <button>*</button>
-            <button>6</button>
-            <button>5</button>
-            <button>4</button>
-            <button>-</button>
-            <button>3</button>
-            <button>2</button>
-            <button>1</button>
-            <button>+</button>
-            <button>=</button>
+            <button onclick="limpar()">C</button>
+            <button onclick="apagar()">←</button>
+            <button onclick="adicionar('%')">%</button>
+            <button class="operador" onclick="adicionar('/')">/</button>
+            
+            <button onclick="adicionar('7')">7</button>
+            <button onclick="adicionar('8')">8</button>
+            <button onclick="adicionar('9')">9</button>
+            <button class="operador" onclick="adicionar('*')">*</button>
+            
+            <button onclick="adicionar('4')">4</button>
+            <button onclick="adicionar('5')">5</button>
+            <button onclick="adicionar('6')">6</button>
+            <button class="operador" onclick="adicionar('-')">-</button>
+            
+            <button onclick="adicionar('1')">1</button>
+            <button onclick="adicionar('2')">2</button>
+            <button onclick="adicionar('3')">3</button>
+            <button class="operador" onclick="adicionar('+')">+</button>
+            
+            <button onclick="adicionar('0')">0</button>
+            <button onclick="adicionar('.')">.</button>
+            <button onclick="calcular()" class="operador" style="grid-column: span 2;">=</button>
         </div>
-      </div>
+    </div>
+    <!-- Carrega o arquivo JS para as funções da calculadora -->
+    <script src="script.js" defer></script>
     </main>
 
     <footer>&copy;Francis Simon</footer>
