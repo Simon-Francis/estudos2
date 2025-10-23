@@ -70,6 +70,7 @@ main {
 }
 
 section#ficha {
+  display: n;
   background-color: var(--fundo-card);
   padding: 20px;
   border-radius: 8px;
@@ -116,6 +117,10 @@ section#ficha {
 
 section#detalhes {
   grid-column: 2;
+}
+
+article#video {
+  display: none;
 }
 
 article {
