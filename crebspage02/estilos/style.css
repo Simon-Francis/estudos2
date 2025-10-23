@@ -236,6 +236,7 @@ article#video .video-container {
 }
 
 #projeto-container .foto {
+  display: block;
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
@@ -249,20 +250,6 @@ footer {
   text-align: center;
   padding: 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
