@@ -35,17 +35,17 @@
     main {
       max-width: 1200px;
       margin: auto;
-      display: grid;
-      grid-template-columns: 20% repeat(5, 16%);
-      grid-template-rows: repeat(6, 1fr);
+      display: flex;
       background-image: linear-gradient(#7f0fa7, #9a77a7);
       height: calc(100vh - 90px);
       border-radius: 1%;
     }
 
+    /* -- Barra lateral -- */
+
     .sidebar {
       position: absolute;
-      
+
       color: rgb(251, 250, 253);
       transition: 0.5s;
       width: 3%;
@@ -57,7 +57,6 @@
       font-size: 30px;
       padding-left: 1%;
       padding-top: 20px;
-      
     }
 
     .sidebar:hover {
@@ -96,19 +95,56 @@
       display: inline;
     }
 
-    .pag-main {
-      display: block;
+    /* -- Calendário -- */
+
+    .calendario {
+      display: grid;
+      grid-template: repeat(7, 1fr) / repeat(7, 1fr);
+      background-color: #333;
+      width: 800px;
+      height: 500px;
+      border-radius: 5px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 
-    .maincont {
-      place-items: start start;
-      grid-area: 1/2/-1/-1;
-      height: 100%;
+    .mes {
+      display: flex;
+      grid-area: 1/1/2/3;
+      align-items: center;
+      font-size: 2em;
+      color: white;
     }
 
-    .calculadora {
-      grid-area: 2/2/5/5;
-      border: 5px solid black;
+    .ano {
+      display: flex;
+      grid-area: 1/4/2/6;
+      align-items: center;
+      font-size: 2em;
+      color: white;
+    }
+
+    .dias {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      grid-area: 2/1/3/8;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    .data {
+        
+        grid-area: 3/1/8/8;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .data > span {
+        max-width: 800px;
+        font-size: 3em;
+        flex-wrap: wrap;
     }
 
     footer {
@@ -118,53 +154,6 @@
       margin: auto;
       margin-top: 10px;
       text-align: center;
-    }
-
-    /*Calculadora*/
-    .calculadora {
-      background-color: #333;
-      border-radius: 5px;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-
-    #visor {
-      width: 100%;
-      height: 40px;
-      font-size: 24px;
-      text-align: right;
-      margin-bottom: 10px;
-      padding: 5px;
-      background-color: #eee;
-      border: none;
-    }
-
-    .botoes {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 5px;
-    }
-
-    button {
-      padding: 10px;
-      font-size: 18px;
-      border: none;
-      background-color: #4caf50;
-      color: white;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    button:hover {
-      background-color: #45a049;
-    }
-
-    .operador {
-      background-color: #f44336;
-    }
-
-    .operador:hover {
-      background-color: rgb(255, 2, 2);
     }
   </style>
 
@@ -196,47 +185,56 @@
         </a>
       </div>
 
-      <!--Calculadora-->
+      <!--Calendário-->
+      <div class="calendario">
+        <span class="mes">Mês:</span>
+        <span class="ano">Ano:</span>
 
-      <div class="calculadora">
-        <!-- Visor da calculadora -->
-        <input type="text" id="visor" readonly />
-
-        <!-- Botões da calculadora -->
-        <div class="botoes">
-          <button onclick="limpar()">C</button>
-          <button onclick="apagar()">←</button>
-          <button onclick="adicionar('%')">%</button>
-          <button class="operador" onclick="adicionar('/')">/</button>
-
-          <button onclick="adicionar('7')">7</button>
-          <button onclick="adicionar('8')">8</button>
-          <button onclick="adicionar('9')">9</button>
-          <button class="operador" onclick="adicionar('*')">*</button>
-
-          <button onclick="adicionar('4')">4</button>
-          <button onclick="adicionar('5')">5</button>
-          <button onclick="adicionar('6')">6</button>
-          <button class="operador" onclick="adicionar('-')">-</button>
-
-          <button onclick="adicionar('1')">1</button>
-          <button onclick="adicionar('2')">2</button>
-          <button onclick="adicionar('3')">3</button>
-          <button class="operador" onclick="adicionar('+')">+</button>
-
-          <button onclick="adicionar('0')">0</button>
-          <button onclick="adicionar('.')">.</button>
-          <button
-            onclick="calcular()"
-            class="operador"
-            style="grid-column: span 2"
-          >
-            =
-          </button>
+        <div class="dias">
+          <span>Dom</span>
+          <span>Seg</span>
+          <span>Ter</span>
+          <span>Qua</span>
+          <span>Qui</span>
+          <span>Sex</span>
+          <span>Sab</span>
         </div>
+
+        <div class="data">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span>11</span>
+            <span>12</span>
+            <span>13</span>
+            <span>14</span>
+            <span>15</span>
+            <span>16</span>
+            <span>17</span>
+            <span>18</span>
+            <span>19</span>
+            <span>20</span>
+            <span>21</span>
+            <span>22</span>
+            <span>23</span>
+            <span>24</span>
+            <span>25</span>
+            <span>26</span>
+            <span>27</span>
+            <span>28</span>
+            <span>29</span>
+            <span>30</span>
+            <span>31</span>
+        </div>
+
       </div>
-      <!-- Carrega o arquivo JS para as funções da calculadora -->
-      <script src="script.js" defer></script>
     </main>
 
     <footer>&copy;Francis Simon</footer>
